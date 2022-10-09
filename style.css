@@ -1,0 +1,32 @@
+html{
+  min-height: 100%;
+  overflow: hidden;
+}
+body{
+  color: rgb(94, 255, 0);
+  font-family: monospace;  
+  background-color: rgb(0,0,0);  
+}
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 25.8em;
+    border-right: 2px solid rgb(94, 255, 0);
+    font-size: 1em;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 25.8em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgb(94, 255, 0);}
+  to{border-right-color: transparent;}
+}
